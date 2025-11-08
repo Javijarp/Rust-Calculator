@@ -14,10 +14,6 @@ to first identify the multiplication, and then divide the equation into "3 + (5 
 Then we can handle the multiplication first, and then the addition.
 */
 
-/*
-Look for the lowest operator in the equation, split the equation into two parts.
-*/
-
 use crate::utils::helper::is_valid_operator;
 
 pub fn handle_equation(equation: String) -> f64 {

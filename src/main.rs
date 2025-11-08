@@ -1,18 +1,20 @@
+// ==================== main.rs ====================
+use eframe::egui;
+
+mod ui;
 mod utils;
 
-use crate::utils::equation_handler;
+fn main() -> Result<(), eframe::Error> {
+    let options = eframe::NativeOptions {
+        viewport: egui::ViewportBuilder::default()
+            .with_inner_size([320.0, 480.0]) // A more calculator-like aspect ratio
+            .with_resizable(false),
+        ..Default::default()
+    };
 
-fn main() {
-    let first_number = 0;
-    let second_number = 10;
-    let operator = '+';
-    let equation_str = format!("{} {} {}", first_number, operator, second_number);
-
-    println!(
-        "Calculating the sum of {} and {}",
-        first_number, second_number
-    );
-
-    let result = equation_handler::handle_equation("((5 + 5) * (5 * 5)) / (5^2 + 5^2)".to_string());
-    println!("\nResult: {}", result);
+    eframe::run_native(
+        "Rust Calculator",
+        options,
+        Box::new(|_cc| Ok(Box::new(ui::CalculatorApp::default()))),
+    )
 }
