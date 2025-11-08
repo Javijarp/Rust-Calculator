@@ -1,18 +1,22 @@
 # Rust Calculator
 
-A modern, sleek calculator application built with Rust and egui, featuring a dark "liquid glass" aesthetic and full keyboard support.
+A modern, sleek calculator application built with Rust and egui with full keyboard support.
 
 ![Rust Calculator Screenshot](https://img.shields.io/badge/Rust-Calculator-orange?style=for-the-badge&logo=rust)
 
+## Screenshot
+
+![Rust Calculator Interface](src/assets/example.png)
+
 ## Features
 
-### 🎨 Modern UI Design
+### Modern UI Design
 
 - **Dark Liquid Glass Theme**: Semi-transparent, modern interface with smooth animations
 - **Responsive Layout**: Clean 4x5 button grid that fits perfectly in a 320x480 window
 - **Visual Feedback**: Buttons light up when pressed, both via mouse clicks and keyboard input
 
-### ⌨️ Full Keyboard Support
+### Full Keyboard Support
 
 - **Number Keys (0-9)**: Direct input
 - **Operators**: `+`, `-`, `*`, `/`, `^` (exponent)
@@ -24,7 +28,7 @@ A modern, sleek calculator application built with Rust and egui, featuring a dar
   - `.`: Decimal point
   - `%`: Modulo operator
 
-### 🧮 Advanced Calculations
+### Advanced Calculations
 
 - Basic arithmetic operations: addition, subtraction, multiplication, division
 - Exponentiation with `^` operator
@@ -32,7 +36,7 @@ A modern, sleek calculator application built with Rust and egui, featuring a dar
 - Decimal number support
 - Error handling for invalid expressions and division by zero
 
-### 🔒 Input Validation
+### Input Validation
 
 - Only allows valid calculator characters (numbers, operators, parentheses)
 - Input length limited to 100 characters
@@ -130,15 +134,6 @@ This project is open source and available under the MIT License.
 
 ## Author
 
-**Javier Jarp**
-
 - GitHub: [@Javijarp](https://github.com/Javijarp)
 
-## Acknowledgments
-
-- Built with [egui](https://github.com/emilk/egui) by Emil Ernerfeldt
-- Inspired by modern calculator designs with a focus on usability
-
 ---
-
-**Note**: This calculator is designed for educational purposes as part of the Software Trends course at university.
